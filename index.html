@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>iWeather</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div id="aimCity">待定</div>
+			<div class="icon-box">
+				<i class="fa fa-cloud fa-2x"></i>
+				<i class="fa fa-sun-o fa-2x"></i>
+				<i class="fa fa-snowflake-o fa-2x"></i>
+				<i class="fa fa-bolt fa-2x"></i>
+				<i class="fa fa-thermometer fa-2x"></i>
+			</div>
+			<div class="today">
+
+				<h3>今 天 天 气</h3>
+				<p>今日时间：</p><span id="todayTime"></span>
+				<dl id="todayItems">
+					<dt>气温</dt>
+					<dd>等待获取...</dd>
+					<dt>天气</dt>
+					<dd>等待获取...</dd>
+					<dt>风力</dt>
+					<dd>等待获取...</dd>
+					<dt>湿度</dt>
+					<dd>等待获取...</dd>
+					<dt>旅行指数</dt>
+					<dd>等待获取...</dd>
+					<dt>锻炼指数</dt>
+					<dd>等待获取...</dd>
+					<dt>紫外线指数</dt>
+					<dd>等待获取...</dd>
+				</dl>
+			</div>
+			<div class="future">
+				<h3>未 来 六 天</h3>
+				<dl id="futureItems">
+					<dt>第一天</dt><span></span>
+					<dd>等待获取...</dd>
+					<dt>第二天</dt><span></span>
+					<dd>等待获取...</dd>
+					<dt>第三天</dt><span></span>
+					<dd>等待获取...</dd>
+					<dt>第四天</dt><span></span>
+					<dd>等待获取...</dd>
+					<dt>第五天</dt><span></span>
+					<dd>等待获取...</dd>
+					<dt>第六天</dt><span></span>
+					<dd>等待获取...</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="input-box">
+			<input id="cityName" type="text" placeholder="请输入城市名" />
+			<button id="send">确定</button>
+			<button id="getLocal">获取本地天气</button>
+		</div>
+	</body>
+
+</html>
