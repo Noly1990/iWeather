@@ -9,7 +9,7 @@ $(document).ready(function() {
 		if(cityname !== '') {
 
 						$.ajax({
-							url: "http://v.juhe.cn/weather/index?cityname=" + cityname + "&dtype=json&format=1&key=866c54e639beeac7373394a3fd195a34",
+							url: "https://v.juhe.cn/weather/index?cityname=" + cityname + "&dtype=json&format=1&key=866c54e639beeac7373394a3fd195a34",
 							dataType: "jsonp",
 							jsonp: "callback",
 							success: function(data) {
@@ -63,7 +63,7 @@ $(document).ready(function() {
 		var futureSpans = $('#futureItems span');
 		var aimCity = $('#aimCity');
 		$.ajax({
-			'url': 'http://api.ip138.com/query/',
+			'url': 'https://api.ip138.com/query/',
 			'data': { //默认自动添加callback参数
 				'ip': '', //为空即为当前iP地址
 				'oid': '9081',
@@ -75,7 +75,7 @@ $(document).ready(function() {
 							var cityName=json.data[2];
 							console.log(cityName);
 							$.ajax({
-							url: "http://v.juhe.cn/weather/index?cityname=" + cityName + "&dtype=json&format=1&key=866c54e639beeac7373394a3fd195a34",
+							url: "https://v.juhe.cn/weather/index?cityname=" + cityName + "&dtype=json&format=1&key=866c54e639beeac7373394a3fd195a34",
 							dataType: "jsonp",
 							jsonp: "callback",
 							success: function(data) {
